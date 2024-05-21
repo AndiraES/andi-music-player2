@@ -1,0 +1,133 @@
+* {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h4 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+body {
+    background: #dbd8d8;
+}
+
+#card {
+    width: 100%;
+    max-width: 470px;
+    height: 460px;
+    background: #fff;
+    margin: 80px auto 0;
+    border-radius: 15px;
+}
+
+.header {
+    background: rgb(118, 240, 111);
+    padding: 6px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* position: absolute; */
+}
+
+.round {
+    /* background: #f1ed73; */
+    background-image: url(img/die-for-you.webp);
+    background-size: cover;
+    height: 375px;
+    margin: 2px 2px 2px 2px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 6px 5px #ccc;
+}
+
+.round img {
+    height: 80px;
+    width: 80px;
+    margin-top: 50px;
+}
+
+#song {
+    margin-top: 7px;
+}
+
+.play-music {
+    width: 100%;
+    max-width: 177px;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+}
+
+.play-music, .left, .play, .right {
+    justify-content: space-between;
+}
+
+.play-music i {
+    font-size: 33px;
+}
+
+.left button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.play button {
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.right button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 6px;
+    background: #d2d1d1;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    /* margin: 40px 0; */
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #d2d1d1;
+    width: 1px;
+    height: 5px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: -400px 0 0 400px #383838;
+}
+
+.current-time, .song-duration {
+    font-size: 13px;
+}
+
+
+.song-duration {
+    margin-left: 100px;
+}
+
+.current-time {
+    margin-right: 100px;
+}

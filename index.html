@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        <title>Music Player</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="card">
+                <div class="header">
+                    <h2>Music Player</h2>
+                </div>
+                <div class="round">
+                    <img src="img/music-icon.png">
+                    <div class="song">
+                        <h4 class="music-title">Die For You Remix</h4>
+                        <p class="artist-name">The Weeknd, Ariana Grande</p>
+                    </div>
+                    <div id="song">
+                        <audio id="song-music">
+                            <source src="Music/The Weeknd, Ariana Grande - Die For You Remix .mp3" type="audio/mpeg">
+                        </audio>
+                        <input type="range" value="0" id="progress">
+                        <div class="duration">
+                            <span class="current-time">00:00</span>
+                            <span class="song-duration">00:00</span>
+                        </div>
+                    </div>
+                    <div class="play-music">
+                        <div class="left">
+                            <button><i class="fa-solid fa-angle-left"></i></button>
+                        </div>
+                        <div class="play">
+                            <button onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></button>
+                        </div>
+                        <div class="right">
+                            <button><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
